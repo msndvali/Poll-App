@@ -1,0 +1,14 @@
+<div class="formGroup">
+  <button type="button" (click)="authService.FacebookAuth()">
+    Sign in with Facebook
+  </button>
+</div>
+
+<div class="formGroup">
+  <button type="button" (click)="authService.afAuth.signOut()">
+    Sign out
+  </button>
+</div>
+
+<button class="create-poll" routerLink="/polls/public-polls">Public Poll</button>
+<button class="create-poll" routerLink="/polls/create-polls">Create Poll</button>
