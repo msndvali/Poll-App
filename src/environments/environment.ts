@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
+  ApiUrl: "https://poll-app-de8bb-default-rtdb.firebaseio.com/",
+
   firebaseConfig: {
     apiKey: "AIzaSyAwrMZTzV2lsZTIc9uYGMqouBXoBx-gqq0",
     authDomain: "poll-app-de8bb.firebaseapp.com",
@@ -12,7 +13,9 @@ export const environment = {
     messagingSenderId: "625274695980",
     appId: "1:625274695980:web:dcd70f123dd4d2e67bbc89",
     measurementId: "G-SFDQCNLCBJ"
-  }
+  },
+
+  production: false
 };
 
 /*

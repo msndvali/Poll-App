@@ -1,0 +1,16 @@
+<form [formGroup]="createPollsForm">
+  <div class="form-group">
+    <label>question</label>
+    <input type="text" formControlName="question">
+
+    <div formArrayName="options" *ngFor="let option of getOptionControls(); let i = index;">
+      <div class="form-group">
+        <label>option {{ i + 1 }}</label>
+        <input type="text" placeholder="option {{ i + 1 }}" formControlName="{{ i }}">
+      </div>
+    </div>
+    <button (click)="addOption()">add Option</button>
+  </div>
+  <br>
+  <button (click)="submit()">submit</button>
+</form>
